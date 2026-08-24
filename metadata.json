@@ -1,0 +1,7 @@
+{
+  "name": "SupplyFlow",
+  "description": "Warehouse Alpha inventory and supply management portal for reorder tracking, product camera capture, and supplier allocation.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["SUPABASE_DATABASE_AND_STORAGE"]
+}
+
