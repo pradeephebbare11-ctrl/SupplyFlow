@@ -141,6 +141,18 @@ export default function App() {
   }, [activeScreen]);
 
   useEffect(() => {
+    localStorage.setItem(STORAGE_KEY_SUPPLIERS, JSON.stringify(suppliers));
+  }, [suppliers]);
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY_ITEMS, JSON.stringify(items));
+  }, [items]);
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY_MANAGER, JSON.stringify(manager));
+  }, [manager]);
+
+  useEffect(() => {
     if (!session) return;
 
     loadWorkspace()
